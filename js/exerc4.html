@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+      <div class="visor">
+        <input type="text" name="res" id="res" value="" class="visor_input"> 
+      </div>
+      <div class="calc_linhas">
+        <button type="button" class="calc_botao_op" id="raiz">√ </button>
+        <button type="button" class="calc_botao_op" id="potencia">^</button>
+        <button type="button" class="calc_botao_op" id="arredondar">≅ </button>
+        <button type="button" class="calc_botao_fun" onclick="apagar()"><</button>
+
+    </div>
+      <div class="calc_linhas">
+          <button type="button" class="calc_botao_fun">MRC</button>
+          <button type="button" class="calc_botao_fun">M-</button>
+          <button type="button" class="calc_botao_fun">M+</button>
+          <button type="button" class="calc_botao_op" id="divisao" onclick="insert('/')">÷</button>
+      </div>
+      <div class="calc_linhas">
+          <button type="button" class="calc_botao" onclick="insert('7')">7</button>
+          <button type="button" class="calc_botao" onclick="insert('8')">8</button>
+          <button type="button" class="calc_botao" onclick="insert('9')">9</button>
+          <button type="button" class="calc_botao_op" id="multiplicar" onclick="insert('*')">x</button>
+      </div>
+      <div class="calc_linhas">
+          <button type="button" class="calc_botao" onclick="insert('4')">4</button>
+          <button type="button" class="calc_botao" onclick="insert('5')">5</button>
+          <button type="button" class="calc_botao" onclick="insert('6')">6</button>
+          <button type="button" class="calc_botao_op" onclick="insert('-')">-</button>
+      </div>
+      <div class="calc_linhas">
+          <button type="button" class="calc_botao" onclick="insert('1')">1</button>
+          <button type="button" class="calc_botao" onclick="insert('2')">2</button>
+          <button type="button" class="calc_botao" onclick="insert('3')">3</button>
+          <button type="button" class="calc_botao_op" onclick="insert('+')">+</button>
+          
+      </div>
+      <div class="calc_linhas">
+          <button type="button" class="calc_botao" onclick="insert('0')">0</button>
+          <button type="button" class="calc_botao" onclick="insert('.')">.</button>
+          <button type="button" class="calc_botao" onclick="limpar()">C</button>
+          <button type="button" class="calc_botao_res" id="resultado" onclick="calcular()">=</button>
+      </div>
+    </form>
+    <script src="js/exerc4.js"></script>
+</body>
+</html>
